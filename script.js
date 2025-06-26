@@ -6,81 +6,84 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você chega na casa do seu josé depois de um dia cansativo De aula, ele está sentado no seu sofá com um charuto na mão e fazendo cálculos físicos",
+        enunciado: "Você chega na casa do seu avô josé depois de um dia cansativo De aula, ele está sentado no seu sofá com um charuto na mão e fazendo cálculos físicos",
         alternativas: [
             {
-                texto: "Vou ir falar rolas com ele, puxar assunto",
+                texto: "Vou ir falar com ele, puxar assunto",
+                afirmacao: "Arroz é bom"
             
             },
             {
                 texto: " Vou esperar ele terminar o calculo e posteriormente conversar com ele",
-                
+                afirmacao: "Quano chega na caa do avô José, espra ele terminar sua conta para então iniciar uma conversa, "
             }
         ]
     },
     {
 
-        enunciado: "Você chega na casa do seu josé depois de um dia cansativo De aula, ele está sentado no seu sofá com um charuto na mão e fazendo cálculos físicos",
+        enunciado: "Você chega na casa do seu avô josé depois de um dia cansativo De aula, ele está sentado no seu sofá com um charuto na mão e fazendo cálculos físicos",
         alternativas: [
             {
                 texto: "(Vou ir falar com ele,puxar assunto) Seu josé se incomodou com você o interrompendo, você foi expulso da casa dele, REINICIE O JOGO              ",
-            
+                afirmacao: "durante a conversa falaram sobre X"
             },
             {
-                texto: "(Vou esperar ele terminar o calculo e posteriormente conversar com ele)",
-                
+                texto: "(Vou esperar ele terminar o calculo e posteriormente conversar com ele), José ficou feliz com você tendo esperado ele terminar o afazeres para falar com ele posteriormente, AVANÇE NA AVENTURA  ",
+                afirmacao: "durante a conversa falaram sobre Y"
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "O seu josé faz a seguinte pergunta, Meu Neto, você prefere aprender conteudos de matematica ou fisica???",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "Você diz que prefere resolver calculos fisicos do que matematicos.",
                 afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Você diz que prefere resolver calculos matematicos do que fisicos.",
                 afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+  
+       
+        enunciado: "O seu josé faz a seguinte pergunta, Meu Neto, você prefere aprender conteudos de matematica ou fisica???",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "(Você diz que prefere resolver calculos fisicos do que matematicos) Seu josé ficou extremamente feliz que seu neto quer seguir os mesmos passos do avô, PROSSIGA NA HISTÓRIA",
+                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "(Você diz que prefere resolver calculos matematicos do que fisicos).Seu josé ficou muito decepcionado com você, e ele não vai aceitar um neto como vocẽ na casa dele, REINICIE O JOGO",
+                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "E para ter certeza que vocẽ vai seguir o legado dele, seu josé faz o ultimo teste com você, ele pede para você descobrir a resposta da charada dele, a charada é o seguinte (Eu sou invisível, mas posso ser visto com a ajuda de um campo magnético. Minha velocidade pode ser quase igual à da luz, mas nunca a ultrapasso. Eu sou a razão de muitos dispositivos eletrônicos funcionarem, mas, ao mesmo tempo, posso ser tão traiçoeiro quanto a eletricidade. Quem sou eu?)",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Você diz que é o Eletron, e explica para ele a razão de ser o eletron",
                 afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "Você diz ser o próton, e explica para ele a razão de ser o próton.",
                 afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "E para ter certeza que vocẽ vai seguir o legado dele, seu josé faz o ultimo teste com você, ele pede para você descobrir a resposta da charada dele, a charada é o seguinte (Eu sou invisível, mas posso ser visto com a ajuda de um campo magnético. Minha velocidade pode ser quase igual à da luz, mas nunca a ultrapasso. Eu sou a razão de muitos dispositivos eletrônicos funcionarem, mas, ao mesmo tempo, posso ser tão traiçoeiro quanto a eletricidade. Quem sou eu?)",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "(Você diz que é o Eletron, e explica para ele a razão de ser o eletron) VOCÊ ACERTOU, Seu josé está extremamente feliz com você e agora tem certeza que você vai seguir os passos dele no futuro, ele tem orgulho de te ter como neto, VOCẼ CONSEGUIU A CONFIANÇA DO SEU AVÔ, PARABÉNS!!!!" ,
+                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "(Você diz ser o próton, e explica para ele a razão de ser o próton). VOCÊ ERROU, Seu josé esta muito triste com você por ter errado a charada, REINICIE O JOGO",
+                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
             }
         ]
     },
